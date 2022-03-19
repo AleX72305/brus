@@ -1,0 +1,433 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img, audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+body a {
+  color: #202020;
+}
+
+.wrapper {
+  max-width: 1199px;
+  margin: 0 auto;
+}
+
+header .main-color {
+  background-color: #ddae5f;
+  margin-bottom: 15px;
+}
+
+header .main-color .wrapper .sale {
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+header .main-color .wrapper .sale span {
+  background: #f67b83;
+  border-radius: 8px;
+  padding: 3px 5px;
+}
+
+header .header-menu {
+  margin-bottom: 25px;
+}
+
+header .header-menu .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-menu .wrapper .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-menu .wrapper .menu ul li:not(:last-child) {
+  padding-right: 43px;
+}
+
+header .header-menu .wrapper .menu ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+header .header-menu .wrapper .menu ul li a:hover {
+  color: #ddae5f;
+}
+
+header .header-menu .wrapper .menu .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-menu .wrapper .menu .form form {
+  margin-right: 25px;
+}
+
+header .header-menu .wrapper .menu .form form input {
+  padding: 10px 225px 10px 0px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.banner .wrapper .banner-img {
+  width: 100%;
+  max-width: 1199px;
+  height: 521px;
+}
+
+.group .wrapper .panel {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: rgba(0, 0, 0, 0.96);
+  margin-bottom: 40px;
+}
+
+.group .wrapper .block .wrapper .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.group .wrapper .block .wrapper .cards .card {
+  width: 225px;
+  height: 285px;
+  text-align: center;
+  position: relative;
+}
+
+.group .wrapper .block .wrapper .cards .card .discount {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  padding: 3px 8px;
+  background-color: #f67b83;
+  border-radius: 7px;
+  color: #eee;
+  left: 12px;
+  top: 12px;
+}
+
+.group .wrapper .block .wrapper .cards .card .pannel-images {
+  width: 225px;
+  height: 225px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.group .wrapper .block .wrapper .cards .card .text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.group .wrapper .block .wrapper .cards .card span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.orders {
+  margin-bottom: 60px;
+}
+
+.orders .wrapper .order {
+  background: #f6f6f6;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orders .wrapper .order .order-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: rgba(0, 0, 0, 0.96);
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.orders .wrapper .order p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  width: 100%;
+  max-width: 553px;
+  margin-bottom: 32px;
+}
+
+.orders .wrapper .order button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 12px 60px;
+  background-color: #a3b6bb;
+  border: 2px solid #a3b6bb;
+  color: rgba(255, 255, 255, 0.96);
+  margin-bottom: 40px;
+}
+
+.orders .wrapper .order button:hover {
+  border: 2px solid #a3b6bb;
+  background-color: #f6f6f6;
+  color: #a3b6bb;
+}
+
+.categories {
+  margin-bottom: 60px;
+}
+
+.categories .wrapper .category-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: rgba(0, 0, 0, 0.96);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.categories .wrapper .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categories .wrapper .category .block-category {
+  width: 102px;
+  height: 140px;
+}
+
+.categories .wrapper .category .block-category:not(:last-child) {
+  margin-right: 20px;
+}
+
+.categories .wrapper .category .block-category .category-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.categories .wrapper .category .block-category .text {
+  text-align: center;
+}
+
+.categories .wrapper .category .block-category .text a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.categories .wrapper .category .block-category .text a:hover {
+  color: #a3b6bb;
+}
+
+footer .menu-des {
+  background-color: #a3b6bb;
+  padding: 60px 0 50px 0;
+}
+
+footer .menu-des .wrapper .footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 67px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .menu-des .wrapper .footer-block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .menu-des .wrapper .footer-block ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+footer .menu-des .wrapper .footer-block ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+footer .menu-des .wrapper .footer-block ul li a:hover {
+  color: #000000;
+}
+
+footer .menu-des .wrapper .footer-block .soc-seti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .menu-des .wrapper .footer-block .soc-seti .seti:not(:last-child) {
+  margin-right: 12px;
+}
+
+footer .menu-des .wrapper .phone .wrapper .number {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+footer .menu-des .wrapper .phone .wrapper .number:hover {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: underline;
+}
+
+footer .menu-des .wrapper .phone .wrapper .number img {
+  margin-right: 12px;
+}
