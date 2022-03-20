@@ -1,3 +1,4 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700&family=Roboto:wght@400;500&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -98,7 +99,8 @@ body {
 }
 
 body a {
-  color: #202020;
+  font-family: "Source Code Pro", monospace;
+  color: black;
 }
 
 .wrapper {
@@ -108,7 +110,6 @@ body a {
 
 header .main-color {
   background-color: #ddae5f;
-  margin-bottom: 15px;
 }
 
 header .main-color .wrapper .sale {
@@ -118,19 +119,22 @@ header .main-color .wrapper .sale {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  font-family: "Source Code Pro", monospace;
 }
 
 header .main-color .wrapper .sale span {
   background: #f67b83;
   border-radius: 8px;
   padding: 3px 5px;
+  font-family: "Source Code Pro", monospace;
 }
 
 header .header-menu {
-  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 20px rgba(116, 119, 142, 0.25);
+          box-shadow: 0px 0px 20px rgba(116, 119, 142, 0.25);
 }
 
-header .header-menu .wrapper .menu {
+header .header-menu .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,57 +144,66 @@ header .header-menu .wrapper .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 70px;
 }
 
-header .header-menu .wrapper .menu ul {
+header .header-menu .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .header-menu .wrapper .menu ul li:not(:last-child) {
+header .header-menu .menu ul li:not(:last-child) {
   padding-right: 43px;
 }
 
-header .header-menu .wrapper .menu ul li a {
+header .header-menu .menu ul li a {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   color: #000000;
+  font-family: "Source Code Pro", monospace;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-header .header-menu .wrapper .menu ul li a:hover {
+header .header-menu .menu ul li a:hover {
   color: #ddae5f;
 }
 
-header .header-menu .wrapper .menu .form {
+header .header-menu .menu .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .header-menu .wrapper .menu .form form {
+header .header-menu .menu .form form {
   margin-right: 25px;
 }
 
-header .header-menu .wrapper .menu .form form input {
-  padding: 10px 225px 10px 0px;
+header .header-menu .menu .form form input {
+  padding: 10px 225px 10px 15px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   background: #f6f6f6;
   border-radius: 10px;
+  font-family: "Source Code Pro", monospace;
 }
 
 .banner {
   margin-bottom: 60px;
 }
 
-.banner .wrapper .banner-img {
-  width: 100%;
-  max-width: 1199px;
+.banner .wrapper .banner-img img {
   height: 521px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.group {
+  margin-bottom: 60px;
 }
 
 .group .wrapper .panel {
@@ -199,27 +212,27 @@ header .header-menu .wrapper .menu .form form input {
   font-size: 36px;
   line-height: 45px;
   color: rgba(0, 0, 0, 0.96);
+  font-family: "Source Code Pro", monospace;
   margin-bottom: 40px;
 }
 
-.group .wrapper .block .wrapper .cards {
+.group .wrapper .block .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 60px;
 }
 
-.group .wrapper .block .wrapper .cards .card {
+.group .wrapper .block .cards .card {
   width: 225px;
   height: 285px;
   text-align: center;
   position: relative;
 }
 
-.group .wrapper .block .wrapper .cards .card .discount {
+.group .wrapper .block .cards .card ul .discount {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
@@ -230,28 +243,37 @@ header .header-menu .wrapper .menu .form form input {
   color: #eee;
   left: 12px;
   top: 12px;
+  font-family: "Source Code Pro", monospace;
 }
 
-.group .wrapper .block .wrapper .cards .card .pannel-images {
+.group .wrapper .block .cards .card ul .two {
+  background: #9cb890;
+  border-radius: 7px;
+}
+
+.group .wrapper .block .cards .card .pannel-images img {
   width: 225px;
   height: 225px;
   border-radius: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
-.group .wrapper .block .wrapper .cards .card .text {
+.group .wrapper .block .cards .card .text {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   color: #000000;
   margin-bottom: 5px;
+  font-family: "Source Code Pro", monospace;
 }
 
-.group .wrapper .block .wrapper .cards .card span {
+.group .wrapper .block .cards .card span {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  font-family: "Source Code Pro", monospace;
 }
 
 .orders {
@@ -259,6 +281,7 @@ header .header-menu .wrapper .menu .form form input {
 }
 
 .orders .wrapper .order {
+  padding: 40px 0;
   background: #f6f6f6;
   border-radius: 10px;
   display: -webkit-box;
@@ -282,7 +305,7 @@ header .header-menu .wrapper .menu .form form input {
   line-height: 45px;
   color: rgba(0, 0, 0, 0.96);
   margin-bottom: 20px;
-  margin-top: 40px;
+  font-family: "Source Code Pro", monospace;
 }
 
 .orders .wrapper .order p {
@@ -293,6 +316,7 @@ header .header-menu .wrapper .menu .form form input {
   width: 100%;
   max-width: 553px;
   margin-bottom: 32px;
+  font-family: "Source Code Pro", monospace;
 }
 
 .orders .wrapper .order button {
@@ -302,7 +326,8 @@ header .header-menu .wrapper .menu .form form input {
   background-color: #a3b6bb;
   border: 2px solid #a3b6bb;
   color: rgba(255, 255, 255, 0.96);
-  margin-bottom: 40px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .orders .wrapper .order button:hover {
@@ -322,6 +347,7 @@ header .header-menu .wrapper .menu .form form input {
   color: rgba(0, 0, 0, 0.96);
   text-align: center;
   margin-bottom: 50px;
+  font-family: "Source Code Pro", monospace;
 }
 
 .categories .wrapper .category {
@@ -342,7 +368,17 @@ header .header-menu .wrapper .menu .form form input {
   margin-right: 20px;
 }
 
-.categories .wrapper .category .block-category .category-img {
+.categories .wrapper .category .block-category a {
+  display: inline-block;
+}
+
+.categories .wrapper .category .block-category a:hover .text {
+  color: #a3b6bb;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.categories .wrapper .category .block-category a .category-img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
@@ -350,27 +386,21 @@ header .header-menu .wrapper .menu .form form input {
   margin-bottom: 16px;
 }
 
-.categories .wrapper .category .block-category .text {
+.categories .wrapper .category .block-category a .text {
   text-align: center;
-}
-
-.categories .wrapper .category .block-category .text a {
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
   color: #000000;
+  font-family: "Source Code Pro", monospace;
 }
 
-.categories .wrapper .category .block-category .text a:hover {
-  color: #a3b6bb;
-}
-
-footer .menu-des {
+.menu-des {
   background-color: #a3b6bb;
   padding: 60px 0 50px 0;
 }
 
-footer .menu-des .wrapper .footer-block {
+.menu-des .wrapper .footer-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,51 +413,347 @@ footer .menu-des .wrapper .footer-block {
           align-items: center;
 }
 
-footer .menu-des .wrapper .footer-block ul {
+.menu-des .wrapper .footer-block ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .menu-des .wrapper .footer-block ul li:not(:last-child) {
+.menu-des .wrapper .footer-block ul li:not(:last-child) {
   margin-right: 30px;
 }
 
-footer .menu-des .wrapper .footer-block ul li a {
+.menu-des .wrapper .footer-block ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  font-family: "Source Code Pro", monospace;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-footer .menu-des .wrapper .footer-block ul li a:hover {
+.menu-des .wrapper .footer-block ul li a:hover {
   color: #000000;
 }
 
-footer .menu-des .wrapper .footer-block .soc-seti {
+.menu-des .wrapper .footer-block .soc-seti {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .menu-des .wrapper .footer-block .soc-seti .seti:not(:last-child) {
+.menu-des .wrapper .footer-block .soc-seti .seti {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.menu-des .wrapper .footer-block .soc-seti .seti:not(:last-child) {
   margin-right: 12px;
 }
 
-footer .menu-des .wrapper .phone .wrapper .number {
+.menu-des .wrapper .phone {
   text-align: center;
+}
+
+.menu-des .wrapper .phone a {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: "Source Code Pro", monospace;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-footer .menu-des .wrapper .phone .wrapper .number:hover {
+.menu-des .wrapper .phone a img {
+  margin-right: 12px;
+}
+
+.menu-des .wrapper .phone a:hover {
   cursor: pointer;
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
-footer .menu-des .wrapper .phone .wrapper .number img {
-  margin-right: 12px;
+.categories-pay {
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 40px 0 50px 0;
+}
+
+.list {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.list .wrapper .text {
+  text-align: center;
+  margin-bottom: 12px;
+  padding-left: 30px;
+}
+
+.list .wrapper .text a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.list .wrapper .text a:hover {
+  text-decoration: none;
+  color: #a3b6bb;
+}
+
+.list .wrapper .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list .wrapper .pay .home {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #000;
+  font-family: "Source Code Pro", monospace;
+}
+
+.pay-blocks {
+  margin-bottom: 90px;
+}
+
+.pay-blocks .wrapper .pay-blok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pay-blocks .wrapper .pay-blok .image-pay {
+  width: 590px;
+  height: 355px;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text {
+  margin-left: 50px;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text .choice-pay {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-left: -25px;
+  margin-bottom: 30px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text .title {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 30px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text p {
+  width: 100%;
+  max-width: 450px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  font-family: "Source Code Pro", monospace;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.pay-blocks .wrapper .pay-blok .pay-text .bank-card {
+  margin-top: -15px;
+}
+
+.map-and-text {
+  margin-bottom: 65px;
+}
+
+.map-and-text .wrapper .general-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map-and-text .wrapper .general-map .text-map {
+  width: 100%;
+  max-width: 560px;
+}
+
+.map-and-text .wrapper .general-map .text-map .title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 30px;
+  width: 515px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.map-and-text .wrapper .general-map .text-map .del-goods {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: #DDAE5F;
+  border-radius: 2px;
+  padding: 2px 4px;
+  width: 357px;
+  margin-bottom: 15px;
+}
+
+.map-and-text .wrapper .general-map .text-map span {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.map-and-text .wrapper .general-map .text-map p {
+  margin-bottom: 30px;
+}
+
+.about-us {
+  margin-bottom: 65px;
+}
+
+.about-us .wrapper .component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us .wrapper .component .text-about {
+  width: 100%;
+  max-width: 560px;
+}
+
+.about-us .wrapper .component .text-about span {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about-us .wrapper .component .text-about p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about-us .wrapper .component .text-about p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about-us .wrapper .component .about-img img {
+  width: 577px;
+  height: 445px;
+}
+
+.contacts {
+  margin-bottom: 155px;
+}
+
+.contacts .wrapper .block-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts .wrapper .block-contact .text-block {
+  margin-left: 35px;
+}
+
+.contacts .wrapper .block-contact .text-block .text-cont {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contacts .wrapper .block-contact .text-block .graphic {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contacts .wrapper .block-contact .text-block p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contacts .wrapper .block-contact .text-block .link {
+  margin-bottom: 10px;
+}
+
+.contacts .wrapper .block-contact .text-block .link a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contacts .wrapper .block-contact .text-block .link a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts .wrapper .block-contact .text-block .link a:hover {
+  text-decoration: underline;
+}
+
+.contacts .wrapper .block-contact .text-block .guests {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #DDAE5F;
+  border-radius: 2px;
+  padding: 2px 4px;
+  width: 185px;
+  margin-top: 15px;
 }

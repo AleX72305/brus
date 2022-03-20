@@ -1,0 +1,47 @@
+
+.map-and-text {
+	margin-bottom: 65px;
+	.wrapper {
+		.general-map {
+			display: flex;
+			justify-content: space-between;
+			.text-map {
+				width: 100%;
+				max-width: 560px;
+				.title-text {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 140%;
+					color: #000000;
+					margin-bottom: 30px;
+					width: 515px;
+					@include SourceCodePro();
+				}
+				.del-goods {
+					text-align: center;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 140%;
+					color: #ffffff;
+					background-color: #DDAE5F;
+					border-radius: 2px;
+					padding: 2px 4px;
+					width: 357px;
+					margin-bottom: 15px;
+				}
+				span {
+					display: block;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 25px;
+					color: #000000;
+					margin-bottom: 20px;
+					@include SourceCodePro();
+				}
+				p {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+}

@@ -1,7 +1,6 @@
 header {
 	.main-color {
 		background-color: #ddae5f;
-		margin-bottom: 15px;
 		.wrapper {
 			.sale {
 				padding: 10px 0;
@@ -10,51 +9,55 @@ header {
 				font-size: 16px;
 				line-height: 20px;
 				color: #fff;
+				@include SourceCodePro();
 				span {
 					background: #f67b83;
 					border-radius: 8px;
 					padding: 3px 5px;
+					@include SourceCodePro();
 				}
 			}
 		}
 	}
 	.header-menu {
-		margin-bottom: 25px;
-		.wrapper {
-			.menu {
+		box-shadow: 0px 0px 20px rgba(116, 119, 142, 0.25);
+		.menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 70px;
+			ul {
 				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				ul {
-					display: flex;
-					li {
-						&:not(:last-child) {
-							padding-right: 43px;
-						}
-						a {
-							font-weight: 400;
-							font-size: 20px;
-							line-height: 25px;
-							color: #000000;
-							&:hover {
-								color: #ddae5f;
-							}
+				li {
+					&:not(:last-child) {
+						padding-right: 43px;
+					}
+					a {
+						font-weight: 400;
+						font-size: 20px;
+						line-height: 25px;
+						color: #000000;
+						@include SourceCodePro();
+						transition: $transition;
+						&:hover {
+							color: #ddae5f;
 						}
 					}
 				}
-				.form {
-					display: flex;
-					form {
-						margin-right: 25px;
-						input {
-							padding: 10px 225px 10px 0px;
-							font-weight: 300;
-							font-size: 16px;
-							line-height: 20px;
-							color: #000000;
-							background: #f6f6f6;
-							border-radius: 10px;
-						}
+			}
+			.form {
+				display: flex;
+				form {
+					margin-right: 25px;
+					input {
+						padding: 10px 225px 10px 15px;
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 20px;
+						color: #000000;
+						background: #f6f6f6;
+						border-radius: 10px;
+						@include SourceCodePro();
 					}
 				}
 			}
@@ -65,13 +68,16 @@ header {
 	margin-bottom: 60px;
 	.wrapper {
 		.banner-img {
-			width: 100%;
-			max-width: 1199px;
-			height: 521px;
+			img {
+				height: 521px;
+				overflow: hidden;
+				border-radius: 0px 0px 20px 20px;
+			}
 		}
 	}
 }
 .group {
+	margin-bottom: 60px;
 	.wrapper {
 		.panel {
 			text-align: center;
@@ -79,19 +85,19 @@ header {
 			font-size: 36px;
 			line-height: 45px;
 			color: rgba(0, 0, 0, 0.96);
+			@include SourceCodePro();
 			margin-bottom: 40px;
 		}
 		.block {
-			.wrapper {
-				.cards {
-					display: flex;
-					justify-content: space-between;
-					margin-bottom: 60px;
-					.card {
-						width: 225px;
-						height: 285px;
-						text-align: center;
-						position: relative;
+			.cards {
+				display: flex;
+				justify-content: space-between;
+				.card {
+					width: 225px;
+					height: 285px;
+					text-align: center;
+					position: relative;
+					ul {
 						.discount {
 							font-weight: 600;
 							font-size: 12px;
@@ -103,26 +109,36 @@ header {
 							color: #eee;
 							left: 12px;
 							top: 12px;
+							@include SourceCodePro();
 						}
-						.pannel-images {
+						.two {
+							background: #9cb890;
+							border-radius: 7px;
+						}
+					}
+					.pannel-images {
+						img {
 							width: 225px;
 							height: 225px;
 							border-radius: 10px;
 							margin-bottom: 10px;
+							overflow: hidden;
 						}
-						.text {
-							font-weight: 500;
-							font-size: 20px;
-							line-height: 25px;
-							color: #000000;
-							margin-bottom: 5px;
-						}
-						span {
-							font-weight: 300;
-							font-size: 16px;
-							line-height: 20px;
-							color: #000000;
-						}
+					}
+					.text {
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 25px;
+						color: #000000;
+						margin-bottom: 5px;
+						@include SourceCodePro();
+					}
+					span {
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 20px;
+						color: #000000;
+						@include SourceCodePro();
 					}
 				}
 			}
@@ -133,6 +149,7 @@ header {
 	margin-bottom: 60px;
 	.wrapper {
 		.order {
+			padding: 40px 0;
 			background: #f6f6f6;
 			border-radius: 10px;
 			display: flex;
@@ -145,7 +162,7 @@ header {
 				line-height: 45px;
 				color: rgba(0, 0, 0, 0.96);
 				margin-bottom: 20px;
-				margin-top: 40px;
+				@include SourceCodePro();
 			}
 			p {
 				font-weight: 300;
@@ -155,6 +172,7 @@ header {
 				width: 100%;
 				max-width: 553px;
 				margin-bottom: 32px;
+				@include SourceCodePro();
 			}
 			button {
 				cursor: pointer;
@@ -163,7 +181,7 @@ header {
 				background-color: #a3b6bb;
 				border: 2px solid #a3b6bb;
 				color: rgba(255, 255, 255, 0.96);
-				margin-bottom: 40px;
+				transition: $transition;
 				&:hover {
 					border: 2px solid #a3b6bb;
 					background-color: #f6f6f6;
@@ -183,6 +201,7 @@ header {
 			color: rgba(0, 0, 0, 0.96);
 			text-align: center;
 			margin-bottom: 50px;
+			@include SourceCodePro();
 		}
 		.category {
 			display: flex;
@@ -193,82 +212,89 @@ header {
 				}
 				width: 102px;
 				height: 140px;
-				.category-img {
-					width: 100px;
-					height: 100px;
-					border-radius: 10px;
-					overflow: hidden;
-					margin-bottom: 16px;
-				}
-				.text {
-					text-align: center;
-					a {
+				a {
+					display: inline-block;
+					&:hover {
+						.text {
+							color: #a3b6bb;
+							transition: $transition;
+						}
+					}
+					.category-img {
+						width: 100px;
+						height: 100px;
+						border-radius: 10px;
+						overflow: hidden;
+						margin-bottom: 16px;
+					}
+					.text {
+						text-align: center;
 						font-weight: 600;
 						font-size: 18px;
 						line-height: 23px;
 						color: #000000;
-						&:hover {
-							color: #a3b6bb;
-						}
+						@include SourceCodePro();
 					}
 				}
 			}
 		}
 	}
 }
-footer {
-	.menu-des {
-		background-color: #a3b6bb;
-		padding: 60px 0 50px 0;
-		.wrapper {
-			.footer-block {
+
+.menu-des {
+	background-color: #a3b6bb;
+	padding: 60px 0 50px 0;
+	.wrapper {
+		.footer-block {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 67px;
+			align-items: center;
+			ul {
 				display: flex;
-				justify-content: space-between;
-				margin-bottom: 67px;
-				align-items: center;
-				ul {
-					display: flex;
-					li {
-						&:not(:last-child) {
-							margin-right: 30px;
-						}
-						a {
-							font-weight: 400;
-							font-size: 16px;
-							line-height: 20px;
-							color: #fff;
-							&:hover {
-								color: #000000;
-							}
-						}
+				li {
+					&:not(:last-child) {
+						margin-right: 30px;
 					}
-				}
-				.soc-seti {
-					display: flex;
-					.seti {
-						&:not(:last-child) {
-							margin-right: 12px;
+					a {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						color: #fff;
+						@include SourceCodePro();
+						transition: $transition;
+						&:hover {
+							color: #000000;
 						}
 					}
 				}
 			}
-			.phone {
-				.wrapper {
-					.number {
-						text-align: center;
-						font-weight: 600;
-						font-size: 16px;
-						line-height: 20px;
-						color: #FFFFFF;
-						&:hover {
-							cursor: pointer;
-							color: #000000;
-							text-decoration: underline;
-						}
-						img {
-							margin-right: 12px;
-						}
+			.soc-seti {
+				display: flex;
+				.seti {
+					transition: $transition;
+					&:not(:last-child) {
+						margin-right: 12px;
 					}
+				}
+			}
+		}
+		.phone {
+			text-align: center;
+			a {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 20px;
+				color: #ffffff;
+				@include SourceCodePro();
+				transition: $transition;
+				img {
+					margin-right: 12px;
+				}
+				&:hover {
+					cursor: pointer;
+					color: #000;
+					text-decoration: underline;
 				}
 			}
 		}

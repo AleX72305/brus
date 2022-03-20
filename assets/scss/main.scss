@@ -1,9 +1,14 @@
 // Общие файлы
+@import './general/fonts';
 @import './general/reset';
 @import './general/general';
+
 
 // Куски кода
 
 
 // Страницы сайта
 @import './page/index';
+@import './page/payment';
+@import './page/delivery';
+@import './page/about_us';
