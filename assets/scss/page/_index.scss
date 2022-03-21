@@ -182,6 +182,7 @@ header {
 				border: 2px solid #a3b6bb;
 				color: rgba(255, 255, 255, 0.96);
 				transition: $transition;
+				@include SourceCodePro();
 				&:hover {
 					border: 2px solid #a3b6bb;
 					background-color: #f6f6f6;

@@ -1,0 +1,22 @@
+.questions-block {
+	.wrapper {
+		position: relative;
+		.questions-answers {
+			position: absolute;
+			background-color: #fff;
+			width: 100%;
+			position: relative;
+			background-color: #fff;
+			.text-questions {
+				color: #000;
+				display: none;
+				width: 300px;
+				height: 300px;
+				overflow: hidden;
+				.active {
+					display: block;
+				}
+			}
+		}
+	}
+}

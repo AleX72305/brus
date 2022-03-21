@@ -1,0 +1,26 @@
+.cards-panel {
+	display: flex;
+	flex-wrap: wrap;
+	.card {
+		margin-bottom: 60px;
+	}
+	button {
+		cursor: pointer;
+		margin: 0 auto;
+		padding: 15px 60px;
+		background-color: #a3b6bb;
+		border: 2px solid #a3b6bb;
+		border-radius: 10px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+		transition: $transition;
+		@include SourceCodePro();
+		&:hover {
+			border: 2px solid #a3b6bb;
+			background-color: #f6f6f6;
+			color: #a3b6bb;
+		}
+	}
+}
