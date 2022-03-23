@@ -443,7 +443,10 @@ header .header-menu .menu .form form {
 }
 
 header .header-menu .menu .form form input {
-  padding: 10px 225px 10px 15px;
+  width: 340px;
+  height: 40px;
+  padding: 0 10px;
+  padding-left: 44px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -451,6 +454,14 @@ header .header-menu .menu .form form input {
   background: #f6f6f6;
   border-radius: 10px;
   font-family: "Source Code Pro", monospace;
+}
+
+header .header-menu .menu .form form button {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #f6f6f6;
 }
 
 header .header-menu .menu .form .basket {
@@ -506,6 +517,7 @@ header .header-menu .menu .form .basket .circle {
   height: 285px;
   text-align: center;
   position: relative;
+  display: block;
 }
 
 .group .wrapper .block .cards .card:hover .text {
@@ -657,7 +669,8 @@ header .header-menu .menu .form .basket .circle {
 }
 
 .categories .wrapper .category .block-category {
-  width: 102px;
+  margin-left: 7px;
+  margin-right: 7px;
   height: 140px;
 }
 
@@ -675,10 +688,14 @@ header .header-menu .menu .form .basket .circle {
   transition: all 300ms ease;
 }
 
-.categories .wrapper .category .block-category a .category-img {
+.categories .wrapper .category .block-category a .category-img img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   overflow: hidden;
   margin-bottom: 16px;
 }
@@ -787,15 +804,13 @@ header .header-menu .menu .form .basket .circle {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
-@media (max-width: 1024px) {
   .group .wrapper .block .cards .card .pannel-images img {
-    width: 200px;
-    height: 200px;
-  }
-  .group {
-    margin-bottom: 30px;
+    width: 210px;
+    height: 210px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 
@@ -853,6 +868,16 @@ header .header-menu .menu .form .basket .circle {
   .group .wrapper .block .cards {
     display: contents;
   }
+  .group .wrapper .panel {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+  .group .wrapper .panel svg {
+    width: 6px;
+    height: 11px;
+  }
   .group .wrapper .block .cards .card .slide {
     width: 100%;
     display: inline-block;
@@ -882,9 +907,6 @@ header .header-menu .menu .form .basket .circle {
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-  }
-  .categories {
-    display: none;
   }
   .orders {
     margin-bottom: 50px;
@@ -1203,12 +1225,8 @@ header .header-menu .menu .form .basket .circle {
   background-color: #DDAE5F;
   border-radius: 2px;
   padding: 2px 4px;
-  width: 185px;
+  width: 200px;
   margin-top: 15px;
-}
-
-.questions .wrapper .questions-answers .text-questions {
-  width: 940px;
 }
 
 .questions .wrapper .questions-answers .text-questions.active .answers-1 {
@@ -1216,21 +1234,78 @@ header .header-menu .menu .form .basket .circle {
   max-height: 300px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  padding-top: 0;
+}
+
+.questions .wrapper .questions-answers .text-questions.active .questions-1::after {
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: #181d31;
+  top: 50%;
+  right: 11px;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: calc(50% - 12px);
 }
 
 .questions .wrapper .questions-answers .text-questions .questions-1 {
   cursor: pointer;
-  padding: 15px 30px;
-  border-radius: 10px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  position: relative;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.questions .wrapper .questions-answers .text-questions .questions-1::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #181d31;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.questions .wrapper .questions-answers .text-questions .questions-1::after {
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: #181d31;
+  top: 50%;
+  right: 11px;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .questions .wrapper .questions-answers .text-questions .questions-1 p {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  color: #4B4B4B;
-  margin-bottom: 20px;
+  color: #4b4b4b;
 }
 
 .questions .wrapper .questions-answers .text-questions .answers-1 {
@@ -1242,6 +1317,9 @@ header .header-menu .menu .form .basket .circle {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   overflow: hidden;
+  width: 100%;
+  max-width: 1090px;
+  margin: 0 auto;
 }
 
 .questions .wrapper .questions-answers .text-questions .answers-1 p {
@@ -1249,6 +1327,20 @@ header .header-menu .menu .form .basket .circle {
   font-size: 16px;
   line-height: 150%;
   color: #4b4b4b;
+}
+
+@media (max-width: 480px) {
+  .questions .wrapper .questions-answers .text-questions .questions-1 p {
+    line-height: 140%;
+    color: #181d31;
+    padding-top: 0;
+  }
+  .questions .wrapper .questions-answers .text-questions .answers-1 p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #181D31;
+  }
 }
 
 .cards-panel {
@@ -1382,4 +1474,9 @@ header .header-menu .menu .form .basket .circle {
 
 .catalog-block .catalog-left .catalog-button ul li a:hover {
   color: #ddae5f;
+}
+
+.group .wrapper .block .cards .card {
+  margin-left: 7px;
+  margin-right: 7px;
 }
