@@ -1,6 +1,5 @@
-
 .map-and-text {
-	margin-bottom: 65px;
+	margin-bottom: 45px;
 	.wrapper {
 		.general-map {
 			display: flex;
@@ -9,12 +8,11 @@
 				width: 100%;
 				max-width: 560px;
 				.title-text {
+					margin-bottom: 30px;
 					font-weight: 400;
 					font-size: 16px;
 					line-height: 140%;
 					color: #000000;
-					margin-bottom: 30px;
-					width: 515px;
 					@include SourceCodePro();
 				}
 				.del-goods {
@@ -23,10 +21,11 @@
 					font-size: 16px;
 					line-height: 140%;
 					color: #ffffff;
-					background-color: #DDAE5F;
+					background-color: #ddae5f;
 					border-radius: 2px;
 					padding: 2px 4px;
-					width: 357px;
+					max-width: 380px;
+					width: 100%;
 					margin-bottom: 15px;
 				}
 				span {
@@ -37,9 +36,15 @@
 					color: #000000;
 					margin-bottom: 20px;
 					@include SourceCodePro();
+					&:not(:last-child) {
+						margin-top: 30px;
+					}
 				}
 				p {
-					margin-bottom: 30px;
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 140%;
+					margin-bottom: 20px;
 				}
 			}
 		}
