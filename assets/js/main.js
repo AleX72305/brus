@@ -22,7 +22,7 @@
 	$('.home-slider').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [
@@ -31,7 +31,6 @@
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 1,
-					infinite: true,
 					dots: true
 				}
 			},
@@ -57,7 +56,7 @@
 	$('.category-slider').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [
@@ -72,9 +71,9 @@
 		]
 	});
 
-	
 
-	
+
+
 	// $('.menu-mobile').on('click', function() {
 	// 	$(this).toggleClass('active');
 	// 	$('.menu-pc').toggleClass('active');

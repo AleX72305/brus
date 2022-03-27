@@ -13,7 +13,7 @@
 		object-fit: cover;
 		object-position: center;
 	}
-	.map-and-text .wrapper .general-map .map iframe{
+	.map-and-text .wrapper .general-map .map iframe {
 		width: 95%;
 	}
 	.map-and-text .wrapper .general-map .map {
@@ -35,8 +35,8 @@
 	}
 	.contacts {
 		margin-bottom: 75px;
-	} 
-	.contacts .wrapper .block-contact .map iframe{
+	}
+	.contacts .wrapper .block-contact .map iframe {
 		width: 100%;
 	}
 	.contacts .wrapper .block-contact .map {
@@ -56,6 +56,9 @@
 @media (max-width: 768px) {
 	.map-and-text .wrapper .general-map {
 		flex-direction: column;
+	}
+	header .header-menu .menu .menu-pc li.list-menu {
+		width: 110px;
 	}
 	.map-and-text .wrapper .general-map .map {
 		width: 105%;
@@ -90,7 +93,7 @@
 	.about-us .wrapper .component .about-img {
 		width: 100%;
 	}
-	.about-us .wrapper .component .about-img img{
+	.about-us .wrapper .component .about-img img {
 		width: 100%;
 	}
 	.contacts .wrapper .block-contact {
@@ -144,10 +147,45 @@
 	}
 }
 @media (max-width: 480px) {
+	.brus-order {
+		display: flex;
+		flex-direction: column;
+	}
+	.banner .wrapper .decore {
+		display: block;
+	}
+	.order-7 {
+		order: 2;
+	}
+	.order-2 {
+		order: 1;
+	}
+	.order-3 {
+		order: 3;
+	}
+	.order-4 {
+		order: 4;
+	}
+	.order-5 {
+		order: 5;
+	}
+	.order-6 {
+		order: 6;
+	}
+
 	header .rew .menu-mobile {
 		display: block;
 	}
-
+	.banner .wrapper .banner-img picture img {
+		border-radius: 10px;
+		object-fit: cover;
+		object-fit: contain;
+		height: auto;
+		width: 100%;
+	}
+	.banner {
+		margin-bottom: 30px;
+	}
 	.slide-mobile-menu {
 		display: block;
 	}
@@ -184,7 +222,6 @@
 		width: 165px;
 		display: inline-block;
 		margin: 0 auto;
-		margin-bottom: 35px;
 	}
 	.group .wrapper .block .cards .slide {
 		margin: 0 auto;
@@ -205,7 +242,7 @@
 		line-height: 18px;
 	}
 	.group {
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	.orders {
 		margin-bottom: 50px;
@@ -258,6 +295,7 @@
 		font-size: 20px;
 		line-height: 25px;
 		margin-bottom: 20px;
+		display: none;
 	}
 	.menu-des .wrapper .footer-block {
 		display: block;
@@ -309,6 +347,7 @@
 		line-height: 35px;
 		margin-bottom: 0;
 	}
+
 	.questions .wrapper .questions-answers .text-questions .questions-1 {
 		padding-left: 0;
 		padding-top: 25px;
@@ -382,6 +421,9 @@
 	}
 	.map-and-text .wrapper .general-map {
 		flex-direction: column;
+	}
+	header .rew .slide-mobile-menu.active {
+		display: block;
 	}
 	.map-and-text .wrapper .general-map .text-map .title-text {
 		font-weight: 300;

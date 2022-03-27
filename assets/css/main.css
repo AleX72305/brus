@@ -416,8 +416,10 @@ header .header-menu .menu ul .top-list:not(:last-child) {
 }
 
 header .header-menu .menu ul .top-list.top-list:hover .menu-pc {
-  max-height: 200px;
-  display: block;
+  max-height: 230px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  padding: 60px 30px 30px 30px;
 }
 
 header .header-menu .menu ul .top-list a {
@@ -446,6 +448,7 @@ header .header-menu .menu .form {
 header .header-menu .menu .form form {
   position: relative;
   margin-right: 25px;
+  z-index: 200;
 }
 
 header .header-menu .menu .form form input {
@@ -485,23 +488,35 @@ header .header-menu .menu .form .basket .circle {
 }
 
 header .header-menu .menu .menu-pc {
-  display: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   position: absolute;
   left: 50%;
-  top: 70px;
+  top: 45px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
   background-color: #fff;
-  padding: 30px 30px;
+  padding: 0px 30px 0px 30px;
   width: 795px;
-  height: 200px;
-  max-height: 200px;
+  height: 230px;
+  max-height: 0;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+header .header-menu .menu .menu-pc::before {
+  content: '';
+  -webkit-box-shadow: 0px 0px 20px rgba(116, 119, 142, 0.25);
+          box-shadow: 0px 0px 20px rgba(116, 119, 142, 0.25);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 
 header .header-menu .menu .menu-pc .sub-menu {
@@ -514,6 +529,7 @@ header .header-menu .menu .menu-pc .sub-menu {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 30px;
 }
 
 header .header-menu .menu .menu-pc li.list-menu {
@@ -549,6 +565,7 @@ header .header-menu .menu .menu-pc li.list-menu img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  padding-top: 30px;
 }
 
 header .rew .menu-mobile {
@@ -757,13 +774,26 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
 
 .banner {
   margin-bottom: 60px;
+  position: relative;
 }
 
-.banner .wrapper .banner-img img {
-  height: 521px;
+.banner .wrapper .banner-img {
   overflow: hidden;
   border-radius: 0px 0px 20px 20px;
-  position: relative;
+}
+
+.banner .wrapper .decore {
+  display: none;
+  top: 10px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .banner .wrapper .banner-mobile img {
@@ -1698,6 +1728,9 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  header .header-menu .menu .menu-pc li.list-menu {
+    width: 110px;
+  }
   .map-and-text .wrapper .general-map .map {
     width: 105%;
     margin-bottom: 30px;
@@ -1798,8 +1831,62 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
 }
 
 @media (max-width: 480px) {
+  .brus-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner .wrapper .decore {
+    display: block;
+  }
+  .order-7 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .order-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order-3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .order-4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .order-5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .order-6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
   header .rew .menu-mobile {
     display: block;
+  }
+  .banner .wrapper .banner-img picture img {
+    border-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: auto;
+    width: 100%;
+  }
+  .banner {
+    margin-bottom: 30px;
   }
   .slide-mobile-menu {
     display: block;
@@ -1834,7 +1921,6 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
     width: 165px;
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: 35px;
   }
   .group .wrapper .block .cards .slide {
     margin: 0 auto;
@@ -1855,7 +1941,7 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
     line-height: 18px;
   }
   .group {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .orders {
     margin-bottom: 50px;
@@ -1908,6 +1994,7 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 20px;
+    display: none;
   }
   .menu-des .wrapper .footer-block {
     display: block;
@@ -2040,6 +2127,9 @@ header .rew .slide-mobile-menu .phone-mobile a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header .rew .slide-mobile-menu.active {
+    display: block;
   }
   .map-and-text .wrapper .general-map .text-map .title-text {
     font-weight: 300;
